@@ -1,7 +1,13 @@
 import { test, expect, describe } from "vitest";
-import { truncated, euclidean, floored, rounded, ceiled } from "./modulo";
+import {
+  truncatedModulo,
+  euclideanModulo,
+  flooredModulo,
+  roundedModulo,
+  ceiledModulo,
+} from "./modulo";
 
-describe("truncated", () => {
+describe("modulo", () => {
   test.each([
     { value: -9, divider: 4, expected: -1 },
     { value: -8, divider: 4, expected: 0 },
@@ -25,7 +31,7 @@ describe("truncated", () => {
   ])(
     "truncated($value, $divider) -> $expected",
     ({ value, divider, expected }) => {
-      expect(truncated(value, divider)).toEqual(expected);
+      expect(truncatedModulo(value, divider)).toEqual(expected);
     },
   );
 
@@ -52,12 +58,12 @@ describe("truncated", () => {
   ])(
     "truncated($value, $divider) -> $expected",
     ({ value, divider, expected }) => {
-      expect(truncated(value, divider)).toEqual(expected);
+      expect(truncatedModulo(value, divider)).toEqual(expected);
     },
   );
 });
 
-describe("euclidean", () => {
+describe("modulo", () => {
   test.each([
     { value: -9, divider: 4, expected: 3 },
     { value: -8, divider: 4, expected: 0 },
@@ -81,7 +87,7 @@ describe("euclidean", () => {
   ])(
     "euclidean($value, $divider) -> $expected",
     ({ value, divider, expected }) => {
-      expect(euclidean(value, divider)).toEqual(expected);
+      expect(euclideanModulo(value, divider)).toEqual(expected);
     },
   );
 
@@ -108,12 +114,12 @@ describe("euclidean", () => {
   ])(
     "euclidean($value, $divider) -> $expected",
     ({ value, divider, expected }) => {
-      expect(euclidean(value, divider)).toEqual(expected);
+      expect(euclideanModulo(value, divider)).toEqual(expected);
     },
   );
 });
 
-describe("floored", () => {
+describe("modulo", () => {
   test.each([
     { value: -9, divider: 4, expected: 3 },
     { value: -8, divider: 4, expected: 0 },
@@ -137,7 +143,7 @@ describe("floored", () => {
   ])(
     "floored($value, $divider) -> $expected",
     ({ value, divider, expected }) => {
-      expect(floored(value, divider)).toEqual(expected);
+      expect(flooredModulo(value, divider)).toEqual(expected);
     },
   );
 
@@ -164,12 +170,12 @@ describe("floored", () => {
   ])(
     "floored($value, $divider) -> $expected",
     ({ value, divider, expected }) => {
-      expect(floored(value, divider)).toEqual(expected);
+      expect(flooredModulo(value, divider)).toEqual(expected);
     },
   );
 });
 
-describe("rounded", () => {
+describe("modulo", () => {
   test.each([
     { value: -9, divider: 4, expected: -1 },
     { value: -8, divider: 4, expected: 0 },
@@ -193,7 +199,7 @@ describe("rounded", () => {
   ])(
     "rounded($value, $divider) -> $expected",
     ({ value, divider, expected }) => {
-      expect(rounded(value, divider)).toEqual(expected);
+      expect(roundedModulo(value, divider)).toEqual(expected);
     },
   );
 
@@ -220,12 +226,12 @@ describe("rounded", () => {
   ])(
     "rounded($value, $divider) -> $expected",
     ({ value, divider, expected }) => {
-      expect(rounded(value, divider)).toEqual(expected);
+      expect(roundedModulo(value, divider)).toEqual(expected);
     },
   );
 });
 
-describe("ceiled", () => {
+describe("modulo", () => {
   test.each([
     { value: -9, divider: 4, expected: -1 },
     { value: -8, divider: 4, expected: 0 },
@@ -249,7 +255,7 @@ describe("ceiled", () => {
   ])(
     "ceiled($value, $divider) -> $expected",
     ({ value, divider, expected }) => {
-      expect(ceiled(value, divider)).toEqual(expected);
+      expect(ceiledModulo(value, divider)).toEqual(expected);
     },
   );
 
@@ -276,7 +282,7 @@ describe("ceiled", () => {
   ])(
     "ceiled($value, $divider) -> $expected",
     ({ value, divider, expected }) => {
-      expect(ceiled(value, divider)).toEqual(expected);
+      expect(ceiledModulo(value, divider)).toEqual(expected);
     },
   );
 });
