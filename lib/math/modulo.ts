@@ -30,7 +30,7 @@ export function flooredModulo(value: number, divisor: number): number {
 }
 
 /**
- * Rounded (IEEE 754) division based modulo
+ * Rounded division based modulo (IEEE 754)
  * @returns remainder with sign between divisor/-2 and divisor/+2
  */
 export function roundedModulo(value: number, divisor: number): number {
