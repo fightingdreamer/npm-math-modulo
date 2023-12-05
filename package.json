@@ -1,7 +1,9 @@
 {
   "name": "math-modulo",
   "type": "module",
-  "files": ["dist"],
+  "files": [
+    "dist"
+  ],
   "main": "./dist/math-modulo.umd.cjs",
   "module": "./dist/math-modulo.js",
   "typings": "./dist/math-modulo.d.ts",
@@ -26,6 +28,7 @@
     "name": "Patryk Stępień"
   },
   "license": "MIT",
+  "homepage": "https://github.com/fightingdreamer/npm-math-modulo",
   "devDependencies": {
     "vite": "^5.0.5",
     "vite-plugin-dts": "^3.6.4",
