@@ -22,9 +22,12 @@ describe("truncated", () => {
     { value: +7, divider: 4, expected: 3 },
     { value: +8, divider: 4, expected: 0 },
     { value: +9, divider: 4, expected: 1 },
-  ])("($value, $divider) -> $expected", ({ value, divider, expected }) => {
-    expect(truncated(value, divider)).toEqual(expected);
-  });
+  ])(
+    "truncated($value, $divider) -> $expected",
+    ({ value, divider, expected }) => {
+      expect(truncated(value, divider)).toEqual(expected);
+    },
+  );
 
   test.each([
     { value: -9, divider: -4, expected: -1 },
@@ -46,12 +49,15 @@ describe("truncated", () => {
     { value: +7, divider: -4, expected: 3 },
     { value: +8, divider: -4, expected: 0 },
     { value: +9, divider: -4, expected: 1 },
-  ])("($value, $divider) -> $expected", ({ value, divider, expected }) => {
-    expect(truncated(value, divider)).toEqual(expected);
-  });
+  ])(
+    "truncated($value, $divider) -> $expected",
+    ({ value, divider, expected }) => {
+      expect(truncated(value, divider)).toEqual(expected);
+    },
+  );
 });
 
-describe("mod_euclid", () => {
+describe("euclidean", () => {
   test.each([
     { value: -9, divider: 4, expected: 3 },
     { value: -8, divider: 4, expected: 0 },
@@ -72,9 +78,12 @@ describe("mod_euclid", () => {
     { value: +7, divider: 4, expected: 3 },
     { value: +8, divider: 4, expected: 0 },
     { value: +9, divider: 4, expected: 1 },
-  ])("emod($value, $divider) -> $expected", ({ value, divider, expected }) => {
-    expect(euclidean(value, divider)).toEqual(expected);
-  });
+  ])(
+    "euclidean($value, $divider) -> $expected",
+    ({ value, divider, expected }) => {
+      expect(euclidean(value, divider)).toEqual(expected);
+    },
+  );
 
   test.each([
     { value: -9, divider: -4, expected: 3 },
@@ -96,12 +105,15 @@ describe("mod_euclid", () => {
     { value: +7, divider: -4, expected: 3 },
     { value: +8, divider: -4, expected: 0 },
     { value: +9, divider: -4, expected: 1 },
-  ])("emod($value, $divider) -> $expected", ({ value, divider, expected }) => {
-    expect(euclidean(value, divider)).toEqual(expected);
-  });
+  ])(
+    "euclidean($value, $divider) -> $expected",
+    ({ value, divider, expected }) => {
+      expect(euclidean(value, divider)).toEqual(expected);
+    },
+  );
 });
 
-describe("mod_floor", () => {
+describe("floored", () => {
   test.each([
     { value: -9, divider: 4, expected: 3 },
     { value: -8, divider: 4, expected: 0 },
@@ -122,9 +134,12 @@ describe("mod_floor", () => {
     { value: +7, divider: 4, expected: 3 },
     { value: +8, divider: 4, expected: 0 },
     { value: +9, divider: 4, expected: 1 },
-  ])("fmod($value, $divider) -> $expected", ({ value, divider, expected }) => {
-    expect(floored(value, divider)).toEqual(expected);
-  });
+  ])(
+    "floored($value, $divider) -> $expected",
+    ({ value, divider, expected }) => {
+      expect(floored(value, divider)).toEqual(expected);
+    },
+  );
 
   test.each([
     { value: -9, divider: -4, expected: -1 },
@@ -146,12 +161,15 @@ describe("mod_floor", () => {
     { value: +7, divider: -4, expected: -1 },
     { value: +8, divider: -4, expected: 0 },
     { value: +9, divider: -4, expected: -3 },
-  ])("fmod($value, $divider) -> $expected", ({ value, divider, expected }) => {
-    expect(floored(value, divider)).toEqual(expected);
-  });
+  ])(
+    "floored($value, $divider) -> $expected",
+    ({ value, divider, expected }) => {
+      expect(floored(value, divider)).toEqual(expected);
+    },
+  );
 });
 
-describe("mod_round", () => {
+describe("rounded", () => {
   test.each([
     { value: -9, divider: 4, expected: -1 },
     { value: -8, divider: 4, expected: 0 },
@@ -172,9 +190,12 @@ describe("mod_round", () => {
     { value: +7, divider: 4, expected: -1 },
     { value: +8, divider: 4, expected: 0 },
     { value: +9, divider: 4, expected: 1 },
-  ])("rmod($value, $divider) -> $expected", ({ value, divider, expected }) => {
-    expect(rounded(value, divider)).toEqual(expected);
-  });
+  ])(
+    "rounded($value, $divider) -> $expected",
+    ({ value, divider, expected }) => {
+      expect(rounded(value, divider)).toEqual(expected);
+    },
+  );
 
   test.each([
     { value: -9, divider: -4, expected: -1 },
@@ -196,12 +217,15 @@ describe("mod_round", () => {
     { value: +7, divider: -4, expected: -1 },
     { value: +8, divider: -4, expected: 0 },
     { value: +9, divider: -4, expected: 1 },
-  ])("rmod($value, $divider) -> $expected", ({ value, divider, expected }) => {
-    expect(rounded(value, divider)).toEqual(expected);
-  });
+  ])(
+    "rounded($value, $divider) -> $expected",
+    ({ value, divider, expected }) => {
+      expect(rounded(value, divider)).toEqual(expected);
+    },
+  );
 });
 
-describe("mod_ceil", () => {
+describe("ceiled", () => {
   test.each([
     { value: -9, divider: 4, expected: -1 },
     { value: -8, divider: 4, expected: 0 },
@@ -222,9 +246,12 @@ describe("mod_ceil", () => {
     { value: +7, divider: 4, expected: -1 },
     { value: +8, divider: 4, expected: 0 },
     { value: +9, divider: 4, expected: -3 },
-  ])("cmod($value, $divider) -> $expected", ({ value, divider, expected }) => {
-    expect(ceiled(value, divider)).toEqual(expected);
-  });
+  ])(
+    "ceiled($value, $divider) -> $expected",
+    ({ value, divider, expected }) => {
+      expect(ceiled(value, divider)).toEqual(expected);
+    },
+  );
 
   test.each([
     { value: -9, divider: -4, expected: 3 },
@@ -246,7 +273,10 @@ describe("mod_ceil", () => {
     { value: +7, divider: -4, expected: 3 },
     { value: +8, divider: -4, expected: 0 },
     { value: +9, divider: -4, expected: 1 },
-  ])("cmod($value, $divider) -> $expected", ({ value, divider, expected }) => {
-    expect(ceiled(value, divider)).toEqual(expected);
-  });
+  ])(
+    "ceiled($value, $divider) -> $expected",
+    ({ value, divider, expected }) => {
+      expect(ceiled(value, divider)).toEqual(expected);
+    },
+  );
 });
