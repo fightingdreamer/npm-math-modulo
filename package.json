@@ -16,7 +16,7 @@
   "version": "0.1.0",
   "description": "Mathematically correct modulo",
   "scripts": {
-    "test": "vitest --once",
+    "test": "vitest --run",
     "test:watch": "vitest",
     "build": "vite build",
     "build:watch": "vite build --watch"
