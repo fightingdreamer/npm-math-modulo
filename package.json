@@ -14,8 +14,10 @@
   "version": "0.1.0",
   "description": "Mathematically correct modulo",
   "scripts": {
-    "test": "vitest",
-    "build": "vite build"
+    "test": "vitest --once",
+    "test:watch": "vitest",
+    "build": "vite build",
+    "build:watch": "vite build --watch"
   },
   "keywords": [
     "math"
