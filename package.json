@@ -4,13 +4,13 @@
   "files": [
     "dist"
   ],
-  "main": "./dist/math-modulo.umd.cjs",
+  "main": "./dist/math-modulo.cjs",
   "module": "./dist/math-modulo.js",
   "typings": "./dist/math-modulo.d.ts",
   "exports": {
     ".": {
       "import": "./dist/math-modulo.js",
-      "require": "./dist/math-modulo.umd.cjs"
+      "require": "./dist/math-modulo.cjs"
     }
   },
   "version": "0.1.0",

@@ -7,7 +7,8 @@ export default defineConfig({
   build: {
     lib: {
       entry: resolve(__dirname, "lib/math/modulo.ts"),
-      name: "math-modulo",
+      name: "@fd/math-modulo",
+      formats: ["es", "cjs"],
       fileName: "math-modulo",
     },
   },
