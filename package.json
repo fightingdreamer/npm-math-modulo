@@ -13,7 +13,7 @@
       "require": "./dist/math-modulo.cjs"
     }
   },
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Mathematically correct modulo",
   "scripts": {
     "test": "vitest --run",
