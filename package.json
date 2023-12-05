@@ -4,6 +4,7 @@
   "files": ["dist"],
   "main": "./dist/math-modulo.umd.cjs",
   "module": "./dist/math-modulo.js",
+  "typings": "./dist/math-modulo.d.ts",
   "exports": {
     ".": {
       "import": "./dist/math-modulo.js",
