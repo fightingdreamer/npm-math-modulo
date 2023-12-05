@@ -1,17 +1,17 @@
-# @fd/math-modulo
+# @fightingdreamer/math-modulo
 
 Several variants of modulo operation.
 
 ## Install
 
 ```bash
-bun add @fd/math-modulo
+bun add @fightingdreamer/math-modulo
 ```
 
 ## Usage
 
 ```js
-import {flooredModulo} from '@fd/math-modulo';
+import {flooredModulo} from '@fightingdreamer/math-modulo';
 
 const result = flooredModulo(-1, 4)
 const expect = 3
@@ -21,7 +21,7 @@ console.assert(result == expect)
 ## Usage (node / commonjs)
 
 ```js
-const {flooredModulo} = require('@fd/math-modulo');
+const {flooredModulo} = require('@fightingdreamer/math-modulo');
 
 const result = flooredModulo(-1, 4)
 const expect = 3

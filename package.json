@@ -1,5 +1,5 @@
 {
-  "name": "@fd/math-modulo",
+  "name": "@fightingdreamer/math-modulo",
   "type": "module",
   "files": [
     "dist"
