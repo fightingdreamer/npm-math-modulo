@@ -1,4 +1,6 @@
-# @fightingdreamer/math-modulo
+# math-modulo
+
+## Description
 
 Several variants of modulo operation.
 
