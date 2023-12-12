@@ -13,7 +13,7 @@
       "require": "./dist/math-modulo.cjs"
     }
   },
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Mathematically correct modulo",
   "scripts": {
     "lint": "eslint lib",
